@@ -8,10 +8,10 @@ body {
 
   .masked-link {
     position: absolute;
-    bottom: 50px;
+    bottom: 35px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;
     color: black;
     background: linear-gradient(90deg, #ff7f50, #1e90ff);
