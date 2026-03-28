@@ -22,3 +22,14 @@ body {
   .masked-link:hover {
     opacity: 0.8;
   }
+
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  color: #555555;
+  font-size: 0.85rem;
+  font-family: sans-serif;
+  pointer-events: none;
+  z-index: 1000;
+}
