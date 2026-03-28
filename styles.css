@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+
+  .masked-link {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    background: linear-gradient(90deg, #ff7f50, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .masked-link:hover {
+    opacity: 0.8;
+  }
