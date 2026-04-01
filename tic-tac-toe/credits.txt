@@ -1,5 +1,0 @@
-A special thanks to Iqbolshoh and their open-source game. 
-
-You can find it at https://github.com/Iqbolshoh/javascript-xo-game/.
-
-This game is created under the MIT license.
