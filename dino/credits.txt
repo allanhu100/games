@@ -1,0 +1,5 @@
+A special thanks to pwa-dino and their open-source game. 
+
+You can find it at https://github.com/pwa-dino/pwa-dino.github.io.
+
+This game is created under the MIT license.
