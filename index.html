@@ -1,80 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="games-favicon.png">
-    <title>Play Games</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            overflow: hidden;
-            padding: 15px;
-            background-color: #ffffff;
-        }
-
-        h1 {
-            margin-bottom: 15px;
-        }
-
-        .game-button {
-            --color: #0077ff;
-            font-family: inherit;
-            display: inline-block;
-            width: 8em;
-            height: 2.6em;
-            line-height: 2.5em;
-            overflow: hidden;
-            cursor: pointer;
-            margin: 10px;
-            font-size: 17px;
-            z-index: 1;
-            color: var(--color);
-            border: 2px solid var(--color);
-            border-radius: 5px;
-            position: relative;
-            text-decoration: none;
-            text-align: center;
-        }
-
-        .game-button::before {
-            position: absolute;
-            content: "";
-            background: var(--color);
-            width: 150px;
-            height: 200px;
-            z-index: -1;
-            border-radius: 50%;
-            top: 100%;
-            left: 100%;
-            transition: 0.3s all;
-        }
-
-        .game-button:hover {
-            color: white;
-        }
-
-        .game-button:hover::before {
-            top: -30px;
-            left: -30px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="games-favicon.png">
+<title>Play Games</title>
 </head>
 <body>
+
+<header class="site-header">
+    <div class="logo">🦖 Allan Hu</div>
+    <nav class="nav-bar">
+        <a href="index.html">Home</a>
+        <div class="select">
+            <div class="selected">Games</div>
+            <div class="options">
+                <a href="https://allanhu100.github.io/games/dino">Dino Game</a>
+                <a href="https://allanhu100.github.io/games/tic-tac-toe">Tic-Tac-Toe</a>
+                <a href="https://allanhu100.github.io/games/2048">2048</a>
+            </div>
+        </div>
+        <a href="https://allanhu100.github.io/credits">Credits</a>
+    </nav>
+</header>
+
+<main class="content games-content">
     <h1>My Games</h1>
-    <a href="https://allanhu100.github.io/games/dino" class="game-button">Dino Game</a>
-    <a href="https://allanhu100.github.io/games/tic-tac-toe" class="game-button">Tic-Tac-Toe</a>
-    <a href="https://allanhu100.github.io/games/2048" class="game-button">2048</a>
-    
-    <a href="https://allanhu100.github.io" class="game-button">Return Home</a>
-    <a href="https://allanhu100.github.io/credits" class="game-button">Credits</a>
-    <footer class="footer">
-        &copy; Allan Hu
-    </footer>
+    <div class="buttons-grid">
+        <a href="https://allanhu100.github.io/games/dino" class="game-button">Dino Game</a>
+        <a href="https://allanhu100.github.io/games/tic-tac-toe" class="game-button">Tic-Tac-Toe</a>
+        <a href="https://allanhu100.github.io/games/2048" class="game-button">2048</a>
+        <a href="https://allanhu100.github.io" class="game-button">Return Home</a>
+        <a href="https://allanhu100.github.io/credits" class="game-button">Credits</a>
+    </div>
+</main>
+
+<footer class="footer">
+    &copy; Allan Hu
+</footer>
+
 </body>
 </html>
