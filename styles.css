@@ -100,3 +100,42 @@ h1 {
     margin-top: 60px;
     padding-bottom: 20px;
 }
+
+.masked-link {
+    display: inline-block;
+    position: relative;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #0077ff, #00d4ff);
+    border-radius: 10px;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    z-index: 0;
+}
+
+.masked-link::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(255,255,255,0.1);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    z-index: -1;
+}
+
+.masked-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(135deg, #00d4ff, #0077ff);
+}
+
+.masked-link:hover::before {
+    background: rgba(255,255,255,0.2);
+}
