@@ -3,6 +3,11 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #f5f5f5;
     color: #333;
+    min-height: 100vh;
+}
+
+html {
+    background-color: #f5f5f5;
 }
 
 h1 { border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 30px; }
@@ -148,7 +153,6 @@ img { max-width: 100%; height: auto; margin: 20px 0; border-radius: 10px; box-sh
 }
 
 .masked-link {
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     padding: 10px 22px;
@@ -158,13 +162,14 @@ img { max-width: 100%; height: auto; margin: 20px 0; border-radius: 10px; box-sh
     text-decoration: none;
     background: linear-gradient(135deg, #0084ff, #00b7ff);
     border-radius: 11px;
-    display: inline-flex;
-    margin-top: 10px;
     transition:
         transform 0.22s ease,
         box-shadow 0.22s ease,
         filter 0.22s ease;
     box-shadow: 0 5px 14px rgba(0,132,255,0.22);
+    display: flex;
+    width: fit-content;
+    margin: 20px auto;
 }
 
 .masked-link:hover {
