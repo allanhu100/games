@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    document.body.insertAdjacentHTML("afterbegin", `
+    document.body.insertAdjacentHTML("beforeend", `
 <footer class="footer">
     &copy; Allan Hu
     <a href="https://allanhu100.github.io/dev">Developer Portal</a>
